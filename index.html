@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nexlify</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header>
+    <nav class="navbar" id="navbar">
+      <div class="logo">Nexlify</div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home" class="nav-item" onclick="scrollToSection('home')">Home</a></li>
+        <li><a href="#features" class="nav-item" onclick="scrollToSection('features')">Features</a></li>
+        <li><a href="#contact" class="nav-item" onclick="scrollToSection('contact')">Contact</a></li>
+      </ul>
+      <div class="menu-toggle" id="menu-toggle">☰</div>
+      <button class="theme-btn" id="themeToggle">🌙</button>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h1>Welcome to Nexlify</h1>
+      <p>Craft your future with cutting-edge, responsive design.</p>
+      <button onclick="scrollToSection('features')">Discover Now</button>
+    </div>
+  </section>
+
+  <section class="features" id="features">
+    <h2>Our Features</h2>
+    <div class="features-grid">
+      <div class="feature-item">
+        <h3>⚡ Blazing Speed</h3>
+        <p>Lightning-fast performance for seamless user experiences.</p>
+      </div>
+      <div class="feature-item">
+        <h3>📱 Fully Responsive</h3>
+        <p>Optimized for all devices, from phones to desktops.</p>
+      </div>
+      <div class="feature-item">
+        <h3>🎨 Modern Design</h3>
+        <p>Sleek, intuitive, and visually stunning UI.</p>
+      </div>
+      <div class="feature-item">
+        <h3>🔒 Top Security</h3>
+        <p>Robust protection to keep your data safe.</p>
+      </div>
+      <div class="feature-item">
+        <h3>🌐 Global Access</h3>
+        <p>Support for multiple languages worldwide.</p>
+      </div>
+      <div class="feature-item">
+        <h3>🛠️ Highly Customizable</h3>
+        <p>Tailor it to fit your unique vision.</p>
+      </div>
+      <div class="feature-item">
+        <h3>🤖 AI Integration</h3>
+        <p>Smart features powered by advanced AI technology.</p>
+      </div>
+      <div class="feature-item">
+        <h3>📊 Real-time Analytics</h3>
+        <p>Track performance with live data insights.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Get in Touch</h2>
+    <p>Have questions or ideas? We're here to help!</p>
+    <div class="contact-details">
+      <p><strong>Email:</strong> <a href="mailto:support@nexlify.com">support@nexlify.com</a></p>
+      <p><strong>Phone:</strong> <a href="tel:+919038015163">+91 9038015163</a></p>
+      <p><strong>Social Media:</strong>
+        <a href="https://x.com/nexlify" target="_blank">X</a> |
+        <a href="https://linkedin.com/company/nexlify" target="_blank">LinkedIn</a> |
+        <a href="https://instagram.com/nexlify" target="_blank">Instagram</a>
+      </p>
+    </div>
+    <div class="contact-form">
+      <h3>Send Us a Message</h3>
+      <div class="form-group">
+        <input type="text" id="name" placeholder="Your Name" required />
+        <input type="email" id="email" placeholder="Your Email" required />
+        <textarea id="message" placeholder="Your Message" required></textarea>
+        <button onclick="submitForm()">Submit</button>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Nexlify. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
